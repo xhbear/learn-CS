@@ -34,7 +34,7 @@ function newElement() {
     var t = document.createTextNode(inputValue);
     li.appendChild(t);
     if (inputValue === '') {
-        alert("請注意有輸入內容！");
+        alert("請注意輸入內容！");
     } else {
         document.getElementById("myUL").appendChild(li);
     }
