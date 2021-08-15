@@ -1,0 +1,13 @@
+body {
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-text {
+    font-family: Roboto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
