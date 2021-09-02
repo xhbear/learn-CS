@@ -1,0 +1,23 @@
+{
+  "name": "learn-cs",
+  "version": "1.0.0",
+  "description": "這是本熊和朋友學習應用html, css, js基礎知識的檔案庫",
+  "main": "index.js",
+  "scripts": {
+    "devStart": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xhbear/learn-CS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xhbear/learn-CS/issues"
+  },
+  "homepage": "https://github.com/xhbear/learn-CS#readme",
+  "devDependencies": {
+    "dotenv": "^10.0.0",
+    "nodemon": "^2.0.12"
+  }
+}

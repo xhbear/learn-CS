@@ -19,7 +19,6 @@ ul {
     padding: 0;
 }
 
-
 /* Style the list items */
 
 ul li {
@@ -27,7 +26,7 @@ ul li {
     position: relative;
     padding: 12px 8px 12px 40px;
     list-style-type: none;
-    color: white;
+    color: #f8f9fa;
     background: #000000;
     font-size: 18px;
     transition: 0.2s;
@@ -80,7 +79,7 @@ ul li.checked::before {
 
 .close:hover {
     background-color: #8F0B0B;
-    color: white;
+    color: #f8f9fa;
 }
 
 
@@ -186,7 +185,7 @@ body {
     margin: 0 20px;
     list-style: none;
     font-weight: bold;
-    color: white;
+    color: #f8f9fa;
 }
 
 .list__card {
@@ -203,7 +202,7 @@ body {
     font-weight: bold;
     padding: 12px 20px;
     background-color: #121212;
-    color: white;
+    color: #f8f9fa;
 }
 
 .list__card-info {
