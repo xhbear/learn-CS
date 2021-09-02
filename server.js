@@ -3,8 +3,8 @@ const app = express()
 
 app.set('view-engine', 'ejs')
 
-app.get('./',(req, res) => {
-    res.render('index.ejs', { name:'Kyle'})
+app.get('/home',(req, res) => {
+    res.render('home ui/index.html')
 })
 
 app.get('/login', (req, res) => {
