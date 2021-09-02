@@ -1,18 +1,30 @@
 const express = require('express')
 const app = express()
+const path= require('path')
+const router = express.Router();
 
-app.set('view-engine', 'ejs')
+app.use(express.urlencoded({ extended: false }))
+app.use(express.static("home ui"));
 
-app.get('/home',(req, res) => {
-    res.render('home ui/index.html')
-})
+router.get('/', function (req, res) {
+    res.sendFile(path.join(__dirname + '/home ui/index.html'));
+    //__dirname: It will resolve to project folder
+});
 
-app.get('/login', (req, res) => {
-    res.render('login ui/login.html')
-})
+router.get('/main', function (req, res) {
+    res.sendFile(path.join(__dirname + '/to-do-list ui/main.html'));
+});
 
-app.get('/register', (req, res) => {
-    res.render('registration ui/register.html')
-})
+router.get('/login', function (req, res) {
+    res.sendFile(path.join(__dirname + '/login ui/login.html'));
+});
 
-app.listen(3000)
+router.get('/register', function (req, res) {
+    res.sendFile(path.join(__dirname + '/register ui/register.html'));
+});
+
+//add router
+app.use('/', router);
+app.listen(process.env.port || 3000);
+
+console.log('Running at Port 3000');
