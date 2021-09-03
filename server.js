@@ -30,7 +30,7 @@ app.use(session({
 app.use(passport.initialize())
 app.use(passport.session())
 app.use(methodOVerride('_method'))
-app.use('/public', express.static('public'))
+app.use(express.static(__dirname + '/public'))
 
 app.get('/', checkAuthenticated, (req, res) => {
     res.render('home.ejs', { name: req.user.name })

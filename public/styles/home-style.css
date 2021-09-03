@@ -48,6 +48,13 @@ nav {
     transition: all 0.3s ease;
 }
 
+body {
+    background-image: url("../images/dawn.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 @media screen and (max-width:1024px) {
     .nav-links{ 
         width: 60%;
