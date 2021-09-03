@@ -19,5 +19,8 @@
   "devDependencies": {
     "dotenv": "^10.0.0",
     "nodemon": "^2.0.12"
+  },
+  "dependencies": {
+    "bcrypt": "^5.0.1"
   }
 }
