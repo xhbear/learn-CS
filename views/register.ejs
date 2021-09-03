@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/register-style.css" type=text/css />
+</head>
+
+<body>
+    <form action="/register" method="POST" class="login">
+        <h1>建立您的 Haiyaa! ID</h2>
+            <h2>只要有 Haiyaa! ID，就能取得 Haiyaa!所有服務。</h2>
+            <input id="surname" name="surname" type="text" placeholder="Surname 姓氏" required />
+            <input id="givenname" name="givenname" type="text" placeholder="Name 名字" required />
+
+            <h3>用戶資料</h3>
+            <input id="email" name="email" type="email" placeholder="name@example.com" required />
+            <p id="username_text">這將是您的新 Haiyaa! ID。</p>
+            <input id="password" name="password" type="password" placeholder="密碼" required />
+            <input id="checkpassword" name="checkpassword" type="password" placeholder="確認密碼" required />
+            <input type="submit" value="Submit 提交" />
+            <input type="reset">
+            <a href="/login">返回登陸首頁.</a></p>
+    </form>
+</body>
+
+</html>
