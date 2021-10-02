@@ -40,6 +40,10 @@ app.get('/productivity', checkAuthenticated, (req, res) => {
     res.render('productivity.ejs')
 })
 
+app.get('/contact', checkAuthenticated, (req, res) => {
+    res.render('contact.ejs')
+})
+
 app.get('/login', checkNotAuthenticated, (req, res) => {
     res.render('login.ejs')
 })
